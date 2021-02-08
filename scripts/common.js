@@ -106,8 +106,15 @@ recoveryButton.addEventListener('click', () => {
 	showPopup(passwordRecoveryForm, 'form_hidden');
 });
 
-headerWishesButton.addEventListener('click', () => showOutline(wishesOutline));
-headerCartButton.addEventListener('click', () => showOutline(cartOutline));
+headerWishesButton.addEventListener('click', () => {
+	hideAllOutlines();
+	showOutline(wishesOutline);
+});
+
+headerCartButton.addEventListener('click', () => {
+	hideAllOutlines();
+	showOutline(cartOutline);
+});
 
 // закрываем меню и футеры кликом по основному разделу
 document.addEventListener('keydown', event => {
