@@ -149,8 +149,8 @@ const brandsList = [
 	},
 	{
 		name: 'Behurr',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-behurr',
+		menuImage: '#image-for-behurr',
 	},
 	{
 		name: 'BLACK FORM',
@@ -164,18 +164,18 @@ const brandsList = [
 	},
 	{
 		name: 'Liberte',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-liberte',
+		menuImage: '#image-for-liberte',
 	},
 	{
 		name: 'Natalie Tonkal',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-natalie-tonkal',
+		menuImage: '#image-for-natalie-tonkal',
 	},
 	{
 		name: 'NOT CONCEPT',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-not-concept',
+		menuImage: '#image-for-not-concept',
 	},
 	{
 		name: 'Odor Objects',
@@ -189,18 +189,18 @@ const brandsList = [
 	},
 	{
 		name: 'Perfert',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-perfert',
+		menuImage: '#image-for-perfert',
 	},
 	{
 		name: 'Perfume Opera',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-perfume-opera',
+		menuImage: '#image-for-perfume-opera',
 	},
 	{
 		name: 'Sands',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-sands',
+		menuImage: '#image-for-sands',
 	},
 	{
 		name: 'Sub Rosa',
@@ -253,8 +253,8 @@ const categoriesList = [
 	},
 	{
 		name: 'Каффы',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-cuffs',
+		menuImage: '#image-for-cuffs',
 	},
 	{
 		name: 'Заколки',
@@ -268,8 +268,8 @@ const categoriesList = [
 	},
 	{
 		name: 'Твёрдые духи',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-solid-perfume',
+		menuImage: '#image-for-solid-perfume',
 	},
 	{
 		name: 'Головные уборы',
@@ -278,8 +278,8 @@ const categoriesList = [
 	},
 	{
 		name: 'Одежда',
-		menuLink: null,
-		menuImage: null,
+		menuLink: '#link-to-clothes',
+		menuImage: '#image-for-clothes',
 	},
 ];
 
