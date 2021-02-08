@@ -28,7 +28,7 @@ main {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p, 
+h1, h2, h3, h4, h5, h6, p,
 span, li, a, input, button {
   font-family: "Nimbus Sans", Arial, sans-serif;
   font-style: normal;
@@ -399,7 +399,7 @@ button:hover, a:hover {
       font-size: 26px;
     }
   }
-  
+
   @media screen and (max-width: 1420px) {
     .input__field {
       font-size: 22px;
@@ -441,7 +441,7 @@ button:hover, a:hover {
 }
 
 .checkbox__true-checkbox {
-  position: absolute; 
+  position: absolute;
   opacity: 0;
 }
 
@@ -471,7 +471,7 @@ button:hover, a:hover {
   opacity: 0;
 }
 
-.checkbox__true-checkbox:checked + 
+.checkbox__true-checkbox:checked +
 .checkbox__fake-checkbox::before {
   opacity: 1;
 }
@@ -512,7 +512,7 @@ button:hover, a:hover {
 }
 
 .filters__true-radio {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -541,7 +541,7 @@ button:hover, a:hover {
   border-radius: 50%;
 }
 
-.filters__true-radio:checked + 
+.filters__true-radio:checked +
 .filters__fake-radio::before {
   opacity: 1;
 }
@@ -565,7 +565,7 @@ button:hover, a:hover {
 }
 
 .round-sizes__true-radio {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -613,7 +613,7 @@ button:hover, a:hover {
   }
 }
 
-.round-sizes__true-radio:checked + 
+.round-sizes__true-radio:checked +
 .round-sizes__fake-radio::before {
   opacity: 1;
 }
@@ -639,7 +639,7 @@ button:hover, a:hover {
   position: relative;
 }
 .oval-sizes__true-radio {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -687,7 +687,7 @@ button:hover, a:hover {
   }
 }
 
-.oval-sizes__true-radio:checked + 
+.oval-sizes__true-radio:checked +
 .oval-sizes__fake-radio::before {
   opacity: 1;
 }
@@ -716,7 +716,7 @@ button:hover, a:hover {
 }
 
 .sides__true-radio {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -762,7 +762,7 @@ button:hover, a:hover {
   }
 }
 
-.sides__true-radio:checked + 
+.sides__true-radio:checked +
 .sides__fake-radio::before {
   opacity: 1;
 }
@@ -799,7 +799,7 @@ button:hover, a:hover {
 }
 
 .materials__true-radio {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -871,7 +871,7 @@ button:hover, a:hover {
   background-image: url(./images/bronze-cross.svg);
 }
 
-.materials__true-radio:checked + 
+.materials__true-radio:checked +
 .materials__fake-radio::before {
   opacity: 1;
 }
@@ -1030,18 +1030,18 @@ button:hover, a:hover {
 }
 
 .menu__link {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1900px) {
   .menu__link {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 1346px) {
   .menu__link {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
@@ -1955,7 +1955,7 @@ button:hover, a:hover {
 }
 
 .delivery__true-radio {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -2018,7 +2018,7 @@ button:hover, a:hover {
   content: "Доставка по миру";
 }
 
-.delivery__true-radio:checked + 
+.delivery__true-radio:checked +
 .delivery__fake-radio::before {
   opacity: 1;
 }
