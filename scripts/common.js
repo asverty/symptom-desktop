@@ -36,6 +36,8 @@ function headerTurnsBlack() {
 	if (header.classList.contains('header_two-colored')) {
 		headerLogo.classList.remove('header__logo_white');
 		buttons.forEach(button => button.classList.remove('header__button_white'));
+		wishesOutline.classList.remove('header__button-outline_white');
+		cartOutline.classList.remove('header__button-outline_white');
 	}
 };
 
@@ -43,6 +45,8 @@ function headerTurnsWhite() {
 	if (header.classList.contains('header_two-colored')) {
 		headerLogo.classList.add('header__logo_white');
 		buttons.forEach(button => button.classList.add('header__button_white'));
+		wishesOutline.classList.add('header__button-outline_white');
+		cartOutline.classList.add('header__button-outline_white');
 	}
 };
 
