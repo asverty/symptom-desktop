@@ -4,7 +4,7 @@ const counter = document.querySelector('.counter');
 const numberOfSections = Array.from(document.querySelectorAll('.section')).length;
 
 const myFullpage = new fullpage('#fullpage', {
-	
+
 	//Navigation
 	menu: '#menu',
 	lockAnchors: false,
