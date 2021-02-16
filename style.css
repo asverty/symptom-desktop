@@ -148,6 +148,12 @@ button:hover, a:hover {
   font-size: 16px;
 }
 
+@media screen and (max-width: 1900px) {
+  .paragraph_order {
+    font-size: 14px;
+  }
+}
+
 .paragraph__link {
   font-size: inherit;
   text-decoration: underline;
@@ -170,6 +176,7 @@ button:hover, a:hover {
   border-radius: 33px;
   background-color: #0F0F0F;
   cursor: pointer;
+  transition: 0.3s ease-out;
 }
 
 @media screen and (max-width: 1580px) {
@@ -187,6 +194,7 @@ button:hover, a:hover {
 
 .black-button_inactive {
   background-color: #bdbdbd;
+  transition: 0.3s ease-out;
 }
 
 .white-button {
@@ -426,6 +434,14 @@ button:hover, a:hover {
 
 .input__error_shown {
   display: flex;
+}
+
+.input__error_s {
+  width: 130%;
+}
+
+.input__error_l {
+  width: 150%;
 }
 
 @media screen and (max-width: 1516px) {

@@ -87,53 +87,54 @@
       </div>
     </div>
 
-    <form class="order">
+    <form id="order-form" class="order" novalidate>
       <h4 class="input__heading">Способ доставки:</h4>
       <div class="delivery">
         <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method">
+          <input class="delivery__true-radio" type="radio" name="order-method" value="moscow">
           <div class="delivery__fake-radio delivery__fake-radio_moscow">Доставка по Москве</div>
         </label>
         <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method" checked>
+          <input class="delivery__true-radio" type="radio" name="order-method" value="russia" checked>
           <div class="delivery__fake-radio delivery__fake-radio_russia">Доставка по России</div>
         </label>
         <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method">
+          <input class="delivery__true-radio" type="radio" name="order-method" value="pickup">
           <span class="delivery__fake-radio delivery__fake-radio_pickup">Самовывоз</span>
         </label>
         <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method">
+          <input class="delivery__true-radio" type="radio" name="order-method" value="worldwide">
           <span class="delivery__fake-radio delivery__fake-radio_worldwide">Доставка по миру</span>
         </label>
       </div>
       <p class="paragraph">Ваш заказ будет доставлен в течение 1-5 рабочих дней по Мск, Мск обл., СПб.
         Товар будет доставлен в течении 4-5 недель по РФ и миру.</p>
+
       <div class="order__alignment">
         <div class="input input_order-s">
           <h3 class="input__heading">Имя:</h3>
-          <input class="input__field" type="text" placeholder="Амар">
-          <span class="input__error">Укажите имя</span>
+          <input id="order-name" name="order-name" class="input__field" type="text" value="" minlength="2" maxlength="20" placeholder="Амар" required>
+          <span id="order-name-error" class="input__error input__error_s"></span>
         </div>
         <div class="input input_order-s">
           <h3 class="input__heading">Фамилия:</h3>
-          <input class="input__field" type="text" placeholder="Скай">
-          <span class="input__error">Укажите фамилию</span>
+          <input id="order-surname" name="order-surname" class="input__field" type="text" value="" minlength="2" maxlength="20" placeholder="Скай" required>
+          <span id="order-surname-error" class="input__error input__error_s"></span>
         </div>
       </div>
       <div class="input input_order-m">
         <h3 class="input__heading">Телефон:</h3>
-        <input class="input__field" type="tel" placeholder="+7 (000) 000 00 00">
-        <span class="input__error">Введите телефон</span>
+        <input id="order-tel" name="order-tel" class="input__field" type="tel" value="" placeholder="+7 (000) 000 00 00" required>
+        <span id="order-tel-error" class="input__error"></span>
       </div>
       <div class="input input_order-m">
         <h3 class="input__heading">E-mail:</h3>
-        <input class="input__field" type="email" placeholder="your@dolphine.com">
-        <span class="input__error">Укажите почту</span>
+        <input id="order-email" name="order-email" class="input__field" type="email" value="" placeholder="your@dolphine.com" required>
+        <span id="order-email-error" class="input__error input__error_l"></span>
       </div>
       <label class="checkbox checkbox_order">
         <div>
-          <input class="checkbox__true-checkbox" type="checkbox" checked>
+          <input id="order-subscribe" name="order-subscribe" class="checkbox__true-checkbox" type="checkbox" value="subscribed" checked>
           <div class="checkbox__fake-checkbox"></div>
         </div>
         <p class="checkbox__description">Подписаться на нас</p>
@@ -141,37 +142,37 @@
       <div class="order__alignment">
         <div class="input input_order-s">
           <h3 class="input__heading">Город:</h3>
-          <input class="input__field" type="text" placeholder="Промес-сити">
-          <span class="input__error">Укажите город</span>
+          <input id="order-city" name="order-city" class="input__field" type="text" value="" placeholder="Промес-сити" required>
+          <span id="order-city-error" class="input__error"></span>
         </div>
         <div class="input input_order-l">
           <h3 class="input__heading">Адрес:</h3>
-          <input class="input__field" type="text" placeholder="пр. Антрацита, д.250 кв.1">
-          <span class="input__error">Введите адрес</span>
+          <input id="order-address" name="order-address" class="input__field" type="text" value="" placeholder="пр. Антрацита, д.250 кв.1" required>
+          <span id="order-address-error" class="input__error"></span>
         </div>
       </div>
       <div class="input input_order-s">
         <h3 class="input__heading">Почтовый индекс:</h3>
-        <input class="input__field" type="number" placeholder="121248">
-        <span class="input__error">Укажите индекс</span>
+        <input id="order-index" name="order-index" class="input__field" type="text" value="" placeholder="121248" required>
+        <span id="order-index-error" class="input__error"></span>
       </div>
       <div class="input input_order-s">
         <h3 class="input__heading">Промокод:</h3>
-        <input class="input__field" type="text" placeholder="kaIF30">
-        <span class="input__error">Укажите индекс</span>
+        <input id="order-promocode" name="order-promocode" class="input__field" type="text" value="" placeholder="kaIF30">
+        <span id="order-promocode-error" class="input__error"></span>
       </div>
       <p class="paragraph paragraph_order">Ваши личные данные будут использоваться для обработки ваших заказов,
         для упрощения использования нашего веб-сайта и для других целей,
         описанных в нашей <a class="paragraph__link" href="./confidentiality.html"> политике конфиденциальности</a>.</p>
       <label class="checkbox checkbox_order">
         <div>
-          <input class="checkbox__true-checkbox" type="checkbox" checked>
+          <input id="order-rules-agreement" name="order-rules-agreement" class="checkbox__true-checkbox checkbox__true-checkbox_required" type="checkbox" value="agreed" checked>
           <div class="checkbox__fake-checkbox"></div>
         </div>
         <p class="checkbox__description">Я прочитал и согласен с правилами сайта согласно тексту <a
             class="paragraph__link" href="./offer.html"> оферты</a>.</p>
       </label>
-      <button class="black-button black-button_order">Оплата</button>
+      <button class="black-button black-button_order submit-button" type="submit">Оплата</button>
     </form>
   </main>
 
@@ -261,16 +262,26 @@
       </ul>
     </nav>
     <div class="menu__right-half">
-      <img id="image-for-pendals" class="menu__image menu__image_hidden" src="../images/content/categories-pendals.jpg" alt="Подвески" >
-      <img id="image-for-earrings" class="menu__image menu__image_hidden" src="../images/content/categories-earrings.jpg" alt="Серьги" >
-      <img id="image-for-rings" class="menu__image menu__image_hidden" src="../images/content/categories-rings.jpg" alt="Кольца" >
-      <img id="image-for-cuffs" class="menu__image menu__image_hidden" src="../images/content/categories-cuffs.jpg" alt="Каффы" >
-      <img id="image-for-bracelets" class="menu__image menu__image_hidden" src="../images/content/categories-bracelets.jpg" alt="Браслеты" >
-      <img id="image-for-hairpins" class="menu__image menu__image_hidden" src="../images/content/categories-hairpins.jpg" alt="Заколки" >
-      <img id="image-for-perfume" class="menu__image menu__image_hidden" src="../images/content/categories-perfume.jpg" alt="Духи" >
-      <img id="image-for-solid-perfume" class="menu__image menu__image_hidden" src="../images/content/categories-solid-perfume.jpg" alt="Твёрдые духи" >
-      <img id="image-for-clothes" class="menu__image menu__image_hidden" src="../images/content/categories-clothes.jpg" alt="Одежда" >
-      <img id="image-for-headwear" class="menu__image menu__image_hidden" src="../images/content/categories-headwear.jpg" alt="Головные уборы" >
+      <img id="image-for-pendals" class="menu__image menu__image_hidden" src="../images/content/categories-pendals.jpg"
+        alt="Подвески">
+      <img id="image-for-earrings" class="menu__image menu__image_hidden"
+        src="../images/content/categories-earrings.jpg" alt="Серьги">
+      <img id="image-for-rings" class="menu__image menu__image_hidden" src="../images/content/categories-rings.jpg"
+        alt="Кольца">
+      <img id="image-for-cuffs" class="menu__image menu__image_hidden" src="../images/content/categories-cuffs.jpg"
+        alt="Каффы">
+      <img id="image-for-bracelets" class="menu__image menu__image_hidden"
+        src="../images/content/categories-bracelets.jpg" alt="Браслеты">
+      <img id="image-for-hairpins" class="menu__image menu__image_hidden"
+        src="../images/content/categories-hairpins.jpg" alt="Заколки">
+      <img id="image-for-perfume" class="menu__image menu__image_hidden" src="../images/content/categories-perfume.jpg"
+        alt="Духи">
+      <img id="image-for-solid-perfume" class="menu__image menu__image_hidden"
+        src="../images/content/categories-solid-perfume.jpg" alt="Твёрдые духи">
+      <img id="image-for-clothes" class="menu__image menu__image_hidden" src="../images/content/categories-clothes.jpg"
+        alt="Одежда">
+      <img id="image-for-headwear" class="menu__image menu__image_hidden"
+        src="../images/content/categories-headwear.jpg" alt="Головные уборы">
     </div>
   </div>
 
@@ -312,7 +323,6 @@
       </div>
     </div>
   </form>
-
 
 
   <!-- FORM: LOG IN -->

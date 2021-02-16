@@ -13,3 +13,12 @@ main.addEventListener('click', () => {
   hideAllPopups();
   cartOutline.classList.remove('header__button-outline_hidden');
 });
+
+
+
+
+
+// ВАЛИДАЦИЯ КОРЗИНЫ
+
+const orderFormValidator = new FormValidatorExtended('#order-form');
+orderFormValidator.enableValidation();
