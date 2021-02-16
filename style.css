@@ -231,6 +231,11 @@ button:hover, a:hover {
   }
 }
 
+.hollow-button {
+  margin-left: auto;
+  margin-right: 80px;
+}
+
 .hollow-button_profile {
   margin-left: auto;
   margin-right: 15%;
@@ -388,6 +393,10 @@ button:hover, a:hover {
   font-size: 36px;
 }
 
+.input__field_invalid {
+  color: #EB5757;
+}
+
 @media screen and (max-width: 1900px) {
   .input__field {
     font-size: 30px;
@@ -413,6 +422,23 @@ button:hover, a:hover {
   left: 0;
   font-size: 14px;
   color: #EB5757;
+}
+
+.input__error_shown {
+  display: flex;
+}
+
+@media screen and (max-width: 1516px) {
+  .input__error {
+    top: 68px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .input__error {
+    top: 60px;
+  }
 }
 
 
@@ -479,6 +505,13 @@ button:hover, a:hover {
 .checkbox__description {
   margin-left: 24px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1420px) {
+  .checkbox__description {
+    margin-left: 16px;
+    font-size: 12px;
+  }
 }
 
 
@@ -1098,21 +1131,21 @@ button:hover, a:hover {
 }
 
 .form__left-half {
-  width: 580px;
-  margin-left: auto;
+  margin-left: 33%;
+  margin-right: 24px;
   display: flex;
   flex-direction: column;
 }
 
 .form__right-half {
-  width: 580px;
+  margin-right: 33%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .form__recovery-button {
   margin-top: 132px;
+  margin-right: auto;
   text-decoration: underline;
   cursor: pointer;
 }
