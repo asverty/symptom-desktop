@@ -61,12 +61,14 @@ const profileSwitcher = document.querySelector('#switcher-profile');
 const ordersSwitcher = document.querySelector('#switcher-orders');
 
 function togglePage() {
-  profile.classList.toggle('profile_hidden');
-  orders.classList.toggle('acc-orders_hidden');
+  setTimeout(() => {
+    profile.classList.toggle('profile_hidden');
+    orders.classList.toggle('acc-orders_hidden');
+  }, 100)
 }
 
-profileSwitcher.addEventListener('change', () => togglePage());
-ordersSwitcher.addEventListener('change', () => {
+profileSwitcher.addEventListener('click', () => togglePage());
+ordersSwitcher.addEventListener('click', () => {
   togglePage();
   profileValidator.resetForm();
   profileValidator.resetValidation();
