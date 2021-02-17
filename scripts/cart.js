@@ -1,5 +1,5 @@
-// закрываем меню и футеры кликом по основному разделу
-// (а кнопке "желания" возвращаем овал)
+// закрываем меню и формы кликом по основному разделу
+// (а кнопке "корзина" возвращаем овал)
 document.addEventListener('keydown', event => {
 	if (event.key == 'Escape') {
     hideAllPopups();
@@ -7,8 +7,8 @@ document.addEventListener('keydown', event => {
   };
 });
 
-// закрываем меню и футеры кликом по основному разделу
-// (а кнопке "желания" возвращаем овал)
+// закрываем меню и формы кликом по основному разделу
+// (а кнопке "корзина" возвращаем овал)
 main.addEventListener('click', () => {
   hideAllPopups();
   cartOutline.classList.remove('header__button-outline_hidden');

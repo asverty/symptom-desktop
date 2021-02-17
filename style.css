@@ -197,6 +197,10 @@ button:hover, a:hover {
   transition: 0.3s ease-out;
 }
 
+.black-button_hidden {
+  display: none;
+}
+
 .white-button {
   width: 220px;
   height: 48px;
@@ -244,9 +248,17 @@ button:hover, a:hover {
   margin-right: 80px;
 }
 
-.hollow-button_profile {
+.hollow-button_profile-exit {
   margin-left: auto;
   margin-right: 15%;
+}
+
+.hollow-button_profile-edit {
+  margin: 0;
+}
+
+.hollow-button_hidden {
+  display: none;
 }
 
 .like-button {
@@ -403,6 +415,10 @@ button:hover, a:hover {
 
 .input__field_invalid {
   color: #EB5757;
+}
+
+.input__field_grey {
+  color: #BDBDBD;
 }
 
 @media screen and (max-width: 1900px) {
@@ -1729,6 +1745,10 @@ button:hover, a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
+.profile_hidden {
+  display: none;
+}
+
 .profile__left-half {
   width: 63%;
   margin-left: auto;
@@ -1757,6 +1777,10 @@ button:hover, a:hover {
   margin-top: 88px;
   display: flex;
   flex-direction: column;
+}
+
+.acc-orders_hidden {
+  display: none;
 }
 
 .acc-order {
