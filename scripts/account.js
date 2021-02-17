@@ -17,10 +17,17 @@ class profileFormValidator extends FormValidator {
     this._password = this._passwordInput.value;
   }
 
-  enableValidation() {
-    super.enableValidation();
+	enableValidation() {
+		this.resetValidation();
+		this._inputs.forEach((input) => {
+			input.addEventListener('input', () => {
+				this._isInputValid(input);
+				this._toggleButtonState(this._submitButton);
+        input.classList.remove('input__field_grey');
+			});
+		});
     this._editButton.addEventListener('click', () => this._unlockForm());
-  }
+	}
 
   _unlockForm() {
     this._editButton.classList.add('hollow-button_hidden');
