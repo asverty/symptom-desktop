@@ -148,6 +148,12 @@ button:hover, a:hover {
   font-size: 16px;
 }
 
+@media screen and (max-width: 1900px) {
+  .paragraph_order {
+    font-size: 14px;
+  }
+}
+
 .paragraph__link {
   font-size: inherit;
   text-decoration: underline;
@@ -170,6 +176,7 @@ button:hover, a:hover {
   border-radius: 33px;
   background-color: #0F0F0F;
   cursor: pointer;
+  transition: 0.3s ease-out;
 }
 
 @media screen and (max-width: 1580px) {
@@ -187,6 +194,11 @@ button:hover, a:hover {
 
 .black-button_inactive {
   background-color: #bdbdbd;
+  transition: 0.3s ease-out;
+}
+
+.black-button_hidden {
+  display: none;
 }
 
 .white-button {
@@ -231,9 +243,22 @@ button:hover, a:hover {
   }
 }
 
-.hollow-button_profile {
+.hollow-button {
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.hollow-button_profile-exit {
   margin-left: auto;
   margin-right: 15%;
+}
+
+.hollow-button_profile-edit {
+  margin: 0;
+}
+
+.hollow-button_hidden {
+  display: none;
 }
 
 .like-button {
@@ -360,7 +385,7 @@ button:hover, a:hover {
 }
 
 .input_order-l {
-  width: 50%;
+  width: 80%;
   margin-bottom: 40px;
   margin-right: 10%;
 }
@@ -386,6 +411,10 @@ button:hover, a:hover {
 
 .input__field {
   font-size: 36px;
+}
+
+.input__field_invalid {
+  color: #EB5757;
 }
 
 @media screen and (max-width: 1900px) {
@@ -415,6 +444,31 @@ button:hover, a:hover {
   color: #EB5757;
 }
 
+.input__error_shown {
+  display: flex;
+}
+
+.input__error_s {
+  width: 130%;
+}
+
+.input__error_l {
+  width: 150%;
+}
+
+@media screen and (max-width: 1516px) {
+  .input__error {
+    top: 68px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .input__error {
+    top: 60px;
+  }
+}
+
 
 
 
@@ -433,7 +487,7 @@ button:hover, a:hover {
 }
 
 .checkbox_order {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -479,6 +533,13 @@ button:hover, a:hover {
 .checkbox__description {
   margin-left: 24px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1420px) {
+  .checkbox__description {
+    margin-left: 16px;
+    font-size: 12px;
+  }
 }
 
 
@@ -1098,21 +1159,21 @@ button:hover, a:hover {
 }
 
 .form__left-half {
-  width: 580px;
-  margin-left: auto;
+  margin-left: 33%;
+  margin-right: 24px;
   display: flex;
   flex-direction: column;
 }
 
 .form__right-half {
-  width: 580px;
+  margin-right: 33%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .form__recovery-button {
   margin-top: 132px;
+  margin-right: auto;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -1680,6 +1741,10 @@ button:hover, a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
+.profile_hidden {
+  display: none;
+}
+
 .profile__left-half {
   width: 63%;
   margin-left: auto;
@@ -1708,6 +1773,10 @@ button:hover, a:hover {
   margin-top: 88px;
   display: flex;
   flex-direction: column;
+}
+
+.acc-orders_hidden {
+  display: none;
 }
 
 .acc-order {

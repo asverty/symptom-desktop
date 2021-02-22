@@ -205,67 +205,63 @@
 
 
   <!-- FORM: SUBSCRIBE -->
-  <form id="subscribe-form" class="form form_hidden">
+  <form id="subscribe-form" class="form form_hidden" novalidate>
     <h3 class="heading heading_form">Давайте познакомимся</h3>
     <div class="form__grid">
-
-      <div class="form__left-half">
+      <div class="form__fraction form__left-half">
         <div class="input input_form">
           <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@dolphine.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
+          <input id="subscribe-email" name="subscribe-email" class="input__field" type="email" value=""
+            placeholder="your@dolphine.com" required>
+          <span id="subscribe-email-error" class="input__error"></span>
         </div>
-        <label class="checkbox checkbox_form">
-          <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
-            <div class="checkbox__fake-checkbox"></div>
-          </div>
-          <p class="checkbox__description">Я хочу получать информацию о новых коллекциях и специальных<br>
-            предложениях на указанный адрес электронной почты</p>
-        </label>
       </div>
-
-      <div class="form__right-half">
+      <div class="form__fraction form__right-half">
         <div class="input input_form">
           <h3 class="input__heading">Ваше имя:</h3>
-          <input class="input__field" type="text" placeholder="Дженгу">
-          <span class="input__error">Имя слишком короткое</span>
+          <input id="subscribe-name" name="subscribe-name" class="input__field" type="text" minlength="2" maxlength="20"
+            value="" placeholder="Дженгу" required>
+          <span id="subscribe-name-error" class="input__error"></span>
         </div>
         <label class="checkbox checkbox_form">
           <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <input id="subscribe-rules-agreement" name="subscribe-rules-agreement"
+              class="checkbox__true-checkbox checkbox__true-checkbox_required" type="checkbox" value="agreed" checked
+              required>
             <div class="checkbox__fake-checkbox"></div>
           </div>
-          <p class="checkbox__description">Нажимая кнопку «Подписаться», вы даете согласие на обработку<br>
-            ваших персональных данных согласно положениям <a class="paragraph__link" href="./confidentiality.html"> по ссылке.</a></p>
+          <p class="checkbox__description">Нажимая кнопку «Подписаться», вы даете согласие на обработку ваших
+            персональных данных согласно положениям <a class="paragraph__link" href="./confidentiality.html"> по
+              ссылке.</a></p>
         </label>
-        <button class="black-button">Подписаться</button>
+        <button class="black-button submit-button" type="submit">Подписаться</button>
       </div>
     </div>
   </form>
 
 
+
   <!-- FORM: LOG IN -->
-  <form id="login-form" class="form form_hidden">
+  <form id="login-form" class="form form_hidden" novalidate>
     <h3 class="heading heading_form">Вход</h3>
     <div class="form__grid">
-
-      <div class="form__left-half">
+      <div class="form__fraction form__left-half">
         <div class="input input_form">
           <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@dolphine.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
+          <input id="login-email" name="login-email" class="input__field" type="email" value=""
+            placeholder="your@dolphine.com" required>
+          <span id="login-email-error" class="input__error"></span>
         </div>
-        <button id="signin-button" class="hollow-button" type='button'>Регистрация</button>
+        <button id="signin-button" class="hollow-button hollow-button_" type='button'>Регистрация</button>
       </div>
-
-      <div class="form__right-half">
+      <div class="form__fraction form__right-half">
         <div class="input input_form">
           <h3 class="input__heading">Пароль:</h3>
-          <input class="input__field" type="password" placeholder="***********">
-          <span class="input__error">Пароль слишком короткий</span>
+          <input id="login-password" name="login-password" class="input__field" type="password" value=""
+            placeholder="***********" required>
+          <span id="login-password-error" class="input__error"></span>
         </div>
-        <button class="black-button">Вход</button>
+        <button class="black-button submit-button" type="submit">Вход</button>
         <button id="recovery-button" class="form__recovery-button" type='button'>Забыли пароль?</button>
       </div>
     </div>
@@ -273,61 +269,65 @@
 
 
   <!-- FORM: SIGN IN -->
-  <form id="signin-form" class="form form_hidden">
+  <form id="signin-form" class="form form_hidden" novalidate>
     <h3 class="heading heading_form">Регистрация</h3>
     <div class="form__grid">
-
       <div class="form__left-half">
         <div class="input input_form">
           <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@dolphine.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
+          <input id="signin-email" name="signin-email" class="input__field" type="email" value=""
+            placeholder="your@dolphine.com" required>
+          <span id="signin-email-error" class="input__error"></span>
         </div>
         <label class="checkbox checkbox_form">
           <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <input id="signin-mailing" name="signin-mailing" class="checkbox__true-checkbox" type="checkbox"
+              value="subscribed" checked>
             <div class="checkbox__fake-checkbox"></div>
           </div>
-          <p class="checkbox__description">Я хочу получать информацию о новых коллекциях и специальных<br>
-            предложениях на указанный адрес электронной почты</p>
+          <p class="checkbox__description">Я хочу получать информацию о новых коллекциях и специальных предложениях на
+            указанный адрес электронной почты</p>
         </label>
       </div>
-
       <div class="form__right-half">
         <div class="input input_form">
           <h3 class="input__heading">Пароль:</h3>
-          <input class="input__field" type="password" placeholder="***********">
-          <span class="input__error">Пароль слишком короткий</span>
+          <input id="signin-password" name="signin-password" class="input__field" type="password" minlength="6"
+            maxlength="24" value="" placeholder="***********" required>
+          <span id="signin-password-error" class="input__error"></span>
         </div>
         <label class="checkbox checkbox_form">
           <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <input id="signin-rules-agreement" name="signin-rules-agreement"
+              class="checkbox__true-checkbox checkbox__true-checkbox_required" type="checkbox" value="agreed" checked
+              required>
             <div class="checkbox__fake-checkbox"></div>
           </div>
-          <p class="checkbox__description">Нажимая кнопку «Регистрация», вы даете согласие на обработку<br>
-            ваших персональных данных согласно положениям <a class="paragraph__link" href="./confidentiality.html"> по ссылке.</a></p>
+          <p class="checkbox__description">Нажимая кнопку «Регистрация», вы даете согласие на обработку ваших
+            персональных данных согласно положениям <a class="paragraph__link" href="./confidentiality.html"> по
+              ссылке.</a></p>
         </label>
-        <button class="black-button">Регистрация</button>
+        <button class="black-button submit-button" type="submit">Регистрация</button>
       </div>
     </div>
   </form>
 
 
   <!-- FORM: PASSWORD RECOVERY -->
-  <form id="password-recovery-form" class="form form_hidden">
+  <form id="password-recovery-form" class="form form_hidden" novalidate>
     <h3 class="heading heading_form">Восстановление</h3>
     <div class="form__grid">
       <div class="form__left-half"></div>
       <div class="form__right-half">
         <div class="input input_form">
           <h3 class="input__heading">E-mail</h3>
-          <input class="input__field" type="text" placeholder="your@dolphine.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
+          <input id="recovery-email" name="recovery-email" class="input__field" type="email" value=""
+            placeholder="your@dolphine.com" required>
+          <span id="recovery-email-error" class="input__error"></span>
         </div>
-        <p class="paragraph paragraph_form">Укажите свой Email.<br>Ссылку на создание
-          нового пароля вы
-          получите<br>по электронной почте.</p>
-        <button class="black-button">Восстановить пароль</button>
+        <p class="paragraph paragraph_form">Укажите свой Email.<br>Ссылку на создание нового пароля вы получите по
+          электронной почте.</p>
+        <button class="black-button submit-button" type="submit">Восстановить пароль</button>
       </div>
     </div>
   </form>
