@@ -385,7 +385,7 @@ button:hover, a:hover {
 }
 
 .input_order-l {
-  width: 50%;
+  width: 80%;
   margin-bottom: 40px;
   margin-right: 10%;
 }
@@ -415,10 +415,6 @@ button:hover, a:hover {
 
 .input__field_invalid {
   color: #EB5757;
-}
-
-.input__field_grey {
-  color: #BDBDBD;
 }
 
 @media screen and (max-width: 1900px) {
@@ -491,7 +487,7 @@ button:hover, a:hover {
 }
 
 .checkbox_order {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   position: relative;
   display: flex;
   flex-direction: row;

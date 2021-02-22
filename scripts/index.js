@@ -124,8 +124,8 @@ lastSection.addEventListener('wheel', event => {
 	if (event.wheelDelta < 0) showFooter();
 });
 
-// Mozilla Firefox
 // открываем футер колёсиком мыши
+// Mozilla Firefox
 lastSection.addEventListener('DOMMouseScroll', event => {
 	if (event.detail > 0) showFooter();
 });
@@ -135,8 +135,8 @@ lastSection.addEventListener('wheel', event => {
 	if (event.wheelDelta > 0) hideFooter();
 });
 
-// Mozilla Firefox
 // закрываем футер колёсиком мыши (если курсор на секции)
+// Mozilla Firefox
 lastSection.addEventListener('DOMMouseScroll', event => {
 	if (event.detail < 0) hideFooter();
 });
@@ -146,8 +146,8 @@ footer.addEventListener('DOMMouseScroll', event => {
 	if (event.detail < 0) hideFooter();
 });
 
-// Mozilla Firefox
 // закрываем футер колёсиком мыши (если курсор на самом футере)
+// Mozilla Firefox
 footer.addEventListener('wheel', event => {
 	if (event.wheelDelta > 0) hideFooter();
 });
