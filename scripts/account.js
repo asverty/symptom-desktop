@@ -62,17 +62,13 @@ const profileSwitcher = document.querySelector('#switcher-profile');
 const ordersSwitcher = document.querySelector('#switcher-orders');
 
 function showProfile() {
-
-    profile.classList.remove('profile_hidden');
-    orders.classList.add('acc-orders_hidden');
-
+  profile.classList.remove('profile_hidden');
+  orders.classList.add('acc-orders_hidden');
 }
 
 function showOrders() {
-
-    profile.classList.add('profile_hidden');
-    orders.classList.remove('acc-orders_hidden');
-
+  profile.classList.add('profile_hidden');
+  orders.classList.remove('acc-orders_hidden');
 }
 
 profileSwitcher.addEventListener('click', () => showProfile());
